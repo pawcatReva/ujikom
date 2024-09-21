@@ -15,4 +15,8 @@ class Keranjang extends Model
         'jumlah',
         'alamat',
     ];
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

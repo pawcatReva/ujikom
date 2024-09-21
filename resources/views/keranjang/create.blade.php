@@ -31,7 +31,7 @@
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="nama">Nama: <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" name="nama" id="nama" value="{{ old('nama') }}" placeholder="Masukkan nama anda" required>
+                                <input type="text" class="form-control" name="nama" id="nama" value="{{ Auth::guard('user')->user()->name ?? '' }}" readonly>
                                 @error('nama')
                                     <div class="text-danger">{{ $message }}</div>
                                 @enderror
@@ -76,7 +76,7 @@
                     <div class="card-footer">
                         <div class="d-flex justify-content-between">
                             <a class="btn btn-danger" href="{{ route('keranjang.index') }}"><i class="fas fa-arrow-left me-1"></i> Kembali</a>
-                            <button type="submit" class="btn btn-success"><i class="fas fa-save me-1"></i> Simpan</button>
+                            <button type="submit" class="btn text-light" style="background-color: #0B6623; border-color: #97B770 ;  border-width: 3px;"><i class="fas fa-save me-1"></i> Simpan</button>
                         </div>
                     </div>
                 </div>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Keranjang;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class KeranjangController extends Controller
@@ -14,7 +15,8 @@ class KeranjangController extends Controller
      */
     public function index()
     {
-        $keranjang = Keranjang::paginate(10); 
+        $keranjang = Keranjang::all();
+        $keranjang = auth()->user()->keranjang;
         return view('keranjang.index', compact('keranjang'));
     }
 
@@ -47,7 +49,8 @@ class KeranjangController extends Controller
             'jumlah.required' => 'Jumlah wajib diisi',
             'alamat.required' => 'Alamat wajib diisi',
         ]);
-
+        $validatedData['user_id'] = auth()->id();
+        $validatedData['nama'] = auth()->user()->name;
         Keranjang::create($validatedData);
         
         return redirect()->route('keranjang.index')->with('success', 'Keranjang berhasil dimasukkan');
@@ -59,8 +62,9 @@ class KeranjangController extends Controller
      * @param  \App\Models\Keranjang  $keranjang
      * @return \Illuminate\Http\Response
      */
-    public function edit(Keranjang $keranjang)
+    public function edit($id)
     {
+        $keranjang = Keranjang::findOrFail($id);
         return view('keranjang.edit', compact('keranjang'));
     }
 

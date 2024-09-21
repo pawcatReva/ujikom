@@ -42,7 +42,7 @@
     background-color: #239b5d !important;
 }
 .border-hijmud {
-    background-color: #608334 !important;
+    background-color: #97B770 !important;
 }
      .btn-success {
     background-color: #97B770 !important;

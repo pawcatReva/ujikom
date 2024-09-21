@@ -1,14 +1,13 @@
  @extends('layouts/app')
  @section('content')
-
+<!-- <style>
+.counter-icon {
+    background-color: #BDB76B !important; /* Ganti dengan warna yang Anda inginkan */
+}
+</style> -->
  <!-- Carousel Start -->
  <div class="carousel-header">
             <div id="carouselId" class="carousel slide bg-success" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
-                </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
                         <img src="img/padi.jpg" class="img-fluid" alt="Image">
@@ -45,11 +44,11 @@
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon bg-hijmud wow fadeInLeft" data-wow-delay="0.2s" aria-hidden="false"></span>
+                    <span class="carousel-control-prev-icon wow fadeInLeft" data-wow-delay="0.2s" aria-hidden="false" style="background-color: #0B6623; border-color: #97B770 ;  border-width: 3px;"></span>
                     <span class="visually-hidden-focusable">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                    <span class="carousel-control-next-icon bg-hijmud wow fadeInRight" data-wow-delay="0.2s" aria-hidden="false"></span>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next" >
+                    <span class="carousel-control-next-icon wow fadeInRight" data-wow-delay="0.2s" aria-hidden="false" style="background-color: #0B6623; border-color: #97B770 ;  border-width: 3px;"></span>
                     <span class="visually-hidden-focusable">Next</span>
                 </button>
             </div>
@@ -98,7 +97,7 @@
             <!-- Counter Item 1 -->
             <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
     <div class="counter">
-        <div class="counter-icon text-danger">
+        <div class="counter-icon text-light">
             <i class="fas fa-users"></i>
         </div>
         <div class="counter-content">
@@ -115,7 +114,7 @@
             <!-- Counter Item 2 -->
             <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="counter">
-                    <div class="counter-icon">
+                    <div class="counter-icon text-light">
                         <i class="fas fa-user-check"></i>
                     </div>
                     <div class="counter-content">
@@ -131,7 +130,7 @@
             <!-- Counter Item 3 -->
             <div class="col-12 col-sm-6 col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
                 <div class="counter">
-                    <div class="counter-icon">
+                    <div class="counter-icon text-light">
                         <i class="fas fa-handshake"></i>
                     </div>
                     <div class="counter-content">

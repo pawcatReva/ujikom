@@ -49,9 +49,10 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($keranjang as $keranjang)
+                                <?php $no = 1 ?>
+                                @foreach($keranjang as $keranjang)
                                     <tr>
-                                        <td>{{ $loop->iteration }}</td>
+                                        <td>{{ $no++ }}</td>
                                         <td>{{ $keranjang->nama }}</td>
                                         <td>{{ $keranjang->nm_barang }}</td>
                                         <td>{{ $keranjang->jumlah }}</td>

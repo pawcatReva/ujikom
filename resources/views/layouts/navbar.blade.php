@@ -17,14 +17,15 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link" data-bs-toggle="dropdown"><span class="dropdown-toggle">Pages</span></a>
                             <div class="dropdown-menu m-0">
-                                <a href="feature.html" class="dropdown-item"><i class="fas fa-user-alt me-2"></i>Account</a>
-                                <a href="feature.html" class="dropdown-item"><i class="fa fa-sign-in-alt me-2"></i>Login</a>
-                                <a href="countries.html" class="dropdown-item"><i class="fa fa-user me-2"></i>Register</a>
+                                <a href="{{route('account.dashboard')}}" class="dropdown-item"><i class="fas fa-user-alt me-2"></i>Account</a>
                                 <a href="testimonial.html" class="dropdown-item"><i class="fas fa-power-off me-2"></i>Logout</a>
                             </div>
                         </div>
                         <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
                     </div>
-                    <a href="{{route('keranjang.index')}}" class="btn btn-success border-hijmud text-light rounded-pill py-2 px-4 px-lg-3 mb-3 mb-md-3 mb-lg-0">Keranjang</a>
+                    <a href="{{route('keranjang.index')}}" class="btn text-light rounded-pill py-2 px-4 px-lg-3 mb-3 mb-md-3 mb-lg-0" style="background-color: #0B6623; border-color: #97B770 ;  border-width: 3px;">
+    Keranjang
+</a>
+
                 </div>
             </nav>
