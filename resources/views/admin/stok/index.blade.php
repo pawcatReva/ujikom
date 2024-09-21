@@ -24,7 +24,7 @@
                                             <th scope="col">Stock</th>
                                             <th scope="col">Pemasukan Awal</th>
                                             <th scope="col">Pengeluaran</th>
-                                            <th scope="col">aksi</th>
+                                            <th scope="col">Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
