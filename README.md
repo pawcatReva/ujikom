@@ -17,7 +17,7 @@ Website yang saya buat ini merupakan sebuah website tempat membeli tumbuhan atau
    - Belanja (Shopping)
    - Keranjang
    - Akun (account)
-  
+
 - Multi user
    - User/pengguna Herby
       - Register (membuat akun sebaga pembeli)
@@ -27,10 +27,10 @@ Website yang saya buat ini merupakan sebuah website tempat membeli tumbuhan atau
       - Membuat pesanan
       - Mengelola akun
     
-  - Admin
+  - Administrator
      - Login (sebagai admin)
      - Pengguna yang dapat dikelola
-     - Membuat pembaruan stok barang
+     - Membuat laporan stok barang
      - Pesanan yang dapat dikelola
 
 ## Akun Default Untuk Pengujian
