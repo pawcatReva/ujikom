@@ -41,7 +41,7 @@ Website yang saya buat ini merupakan sebuah website tempat membeli tumbuhan atau
      - Register terlebih dahulu (opsional)
          - Login
              - Memakai email yang sudah didaftarkan ketika register
-             - Memasukan password yang sudah di bbuat ketika register
+             - Memasukan password yang sudah di buat ketika register
      - login
          - Email : yamada@gmail.com
          - Password : 1234567890
