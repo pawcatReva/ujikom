@@ -45,3 +45,18 @@ Website yang saya buat ini merupakan sebuah website tempat membeli tumbuhan atau
      - login
          - Email : yamada@gmail.com
          - Password : 1234567890
+## ERD
+![Alt text](https://github.com/pawcatReva/ujikom/blob/main/erdujikom.png)
+
+## Teknologi yang Digunakan
+  - Laravel 8
+  - Boostrap 5
+
+## Instalasi
+  - Clone repository
+
+```
+git composer https://github.com/pawcatReva/ujikom.git
+composer install
+cp .env.example .env
+```
