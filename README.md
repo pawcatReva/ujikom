@@ -54,9 +54,9 @@ Website yang saya buat ini merupakan sebuah website tempat membeli tumbuhan atau
 
 ## Instalasi
   - Clone repository
-    
-    '''
-    git clone https://github.com/pawcatReva/ujikom.git
-    composer install
-    cp .env.example .env
-    '''
+
+```
+git composer
+composer install
+cp .env.example .env
+```
