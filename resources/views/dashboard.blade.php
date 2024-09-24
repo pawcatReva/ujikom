@@ -14,9 +14,9 @@
                         <div class="carousel-caption">
                             <div class="text-center p-4" style="max-width: 900px;">
                                 <h4 class="text-white text-uppercase fw-bold mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.1s">Welcome To Herby</h4>
-                                <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">Natural products</h1>
-                                <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-</p>
+                                <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">Tumbuhan dan Rempah Alami</h1>
+                                <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">Herby hadir untuk memberikan Anda produk terbaik dari alam. Temukan kekayaan tumbuhan dan rempah yang tidak hanya lezat, tetapi juga bermanfaat bagi kesehatan Anda. 
+                               </p>
                             </div>
                         </div>
                     </div>
@@ -24,9 +24,9 @@
                         <img src="img/budak.jpg" class="img-fluid" alt="Image">
                         <div class="carousel-caption">
                             <div class="text-center p-4" style="max-width: 900px;">
-                                <h5 class="text-white text-uppercase fw-bold mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.1s">Solution For All Type Of Visas</h5>
-                                <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">Best Visa Immigrations Services</h1>
-                                <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                <h5 class="text-white text-uppercase fw-bold mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.1s">Kualitas Produk yang Tak Tertandingi</h5>
+                                <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">Rempah Pilihan dari Herby</h1>
+                                <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">Kami menawarkan berbagai rempah alami yang siap memperkaya rasa masakan Anda. Dari rempah tradisional hingga varian eksotis, Herby memiliki semuanya.
                                 </p>
                             </div>
                         </div>
@@ -35,9 +35,9 @@
                         <img src="img/duar.jpg" class="img-fluid" alt="Image">
                         <div class="carousel-caption">
                             <div class="text-center p-4" style="max-width: 900px;">
-                                <h5 class="text-white text-uppercase fw-bold mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.1s">Solution For All Type Of Visas</h5>
-                                <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">Best Visa Immigrations Services</h1>
-                                <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                <h5 class="text-white text-uppercase fw-bold mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.1s">Raih Kesehatan Secara Alami</h5>
+                                <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp" data-wow-delay="0.3s">Produk Herbal Terbaik</h1>
+                                <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">Temukan berbagai produk herbal yang bermanfaat untuk kesehatan Anda. Dengan Herby, Anda bisa mendapatkan manfaat maksimal dari setiap tumbuhan alami.
                                 </p>
                             </div>
                         </div>

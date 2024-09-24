@@ -34,15 +34,7 @@ class KeranjangController extends Controller
             'jumlah.required' => 'Jumlah wajib diisi',
             'alamat.required' => 'Alamat wajib diisi',
         ]);
-        // $userId = auth()->user()->id();
-
-        // Pastikan user_id valid
-        // if (!$userId || !User::find($userId)) {
-        //     return redirect()->back()->withErrors(['user_id' => 'User tidak ditemukan']);
-        // }
-
-        // $validatedData['id'] = $id; 
-        // $validatedData['nama'] = auth()->user()->name;
+    
         Keranjang::create($validatedData);
         
         return redirect()->route('keranjang.index')->with('success', 'Keranjang berhasil dimasukkan');

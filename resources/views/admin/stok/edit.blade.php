@@ -8,19 +8,21 @@
                 <li>{{ $err }}</li>
             @endforeach
         </ul>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Tutup"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 @endif
 
-<form action="{{ url('stok/'.$stok->id) }}" method="post" enctype="multipart/form-data">
-    @csrf
-    @method('PUT')
-    <div class="container-fluid pt-5 px-5">
-        <div class="row g-4">
-            <div class="col-sm-12 col-xl-6">
-                <div class="bg-secondary rounded h-100 p-4">
-                    <h6 class="mb-4">Silakan Masukkan Data</h6>
-                    <div class="form-floating mb-3">
+<!-- Form Start -->
+<div class="content-fluid justify-content-center align-items-center min-vh-100">
+    <form id="formPesanan" action="{{ url('stok/'.$stok->id) }}" method="post" class="w-100" enctype="multipart/form-data">
+        @csrf
+        @method('PUT')
+        <div class="container-fluid pt-5 px-5">
+            <div class="row g-4">
+                <div class="col-sm-12 col-xl-12">
+                    <div class="bg-secondary rounded h-100 p-4">
+                        <h6 class="mb-4">Silahkan Masukan</h6>
+                        <div class="form-floating mb-3">
                         <select class="form-select" name="nm_barang" aria-label="Pilih barang">
                             <option selected disabled hidden>Pilih salah satu barang</option>
                             <option value="Cengkih kering" {{ $stok->nm_barang == 'Cengkih kering' ? 'selected' : '' }}>Cengkih kering</option>
@@ -32,37 +34,35 @@
                             <option value="Mahkota dewa" {{ $stok->nm_barang == 'Mahkota dewa' ? 'selected' : '' }}>Mahkota Dewa</option>
                             <option value="Kemiri" {{ $stok->nm_barang == 'Kemiri' ? 'selected' : '' }}>Kemiri</option>
                         </select>
-                        <label for="floatingSelect">Pilih barang</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="number" class="form-control" name="stok" id="stok" value="{{ $stok->stok }}" placeholder="Masukkan sisa stok saat ini" readonly>
-                        <label for="stok">Stok</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="number" class="form-control" name="pemasukan_awal" id="pemasukan_awal" value="{{ $stok->pemasukan_awal }}" placeholder="Masukkan jumlah pemasukan awal barang">
-                        <label for="pemasukan_awal">Jumlah Pemasukan Awal</label>
-                    </div>
-                    <div class="form-floating mb-3">
+                            <label for="floatingSelect">Pilih salah satu barang</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control bg-secondary" name="stok" id="stok" value="{{ $stok->stok }}" placeholder="Masukan sisa stok saat ini" readonly>
+                            <label for="stok">Stock</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" name="pemasukan_awal" id="pemasukan_awal" value="{{ $stok->pemasukan_awal }}" placeholder="Masukan jumlah pemasukan awal barang">
+                            <label for="pemasukan_awal">Jumlah Pemasukan Awal</label>
+                        </div>
+                        <div class="form-floating mb-3">
                         <input type="number" class="form-control" name="pengeluaran" id="pengeluaran" value="{{ $stok->pengeluaran }}" placeholder="Pengeluaran barang">
                         <label for="pengeluaran">Pengeluaran Barang</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <label for="dokumen_barang" class="form-label">Dokumen Barang</label>
-                        <input type="file" class="form-control" name="dokumen_barang" id="dokumen_barang">
+                            <input type="file" class="form-control bg-secondary" name="dokumen_barang" id="dokumen_barang" value="{{ $stok->dokumen_barang }}">
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-xl-6">
-                <div class="card-footer">
-                    <div class="d-flex justify-content-between">
-                        <a class="btn btn-danger" href="{{ route('stok.index') }}"><i class="fas fa-arrow-left me-1"></i> Kembali</a>
-                        <button type="submit" class="btn btn-success"><i class="fas fa-save me-1"></i> Simpan</button>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between">
+                            <a class="btn btn-danger" href="{{ route('stok.index') }}"><i class="fas fa-arrow-left me-1"></i> Kembali</a>
+                            <button type="submit" class="btn btn-success"><i class="fas fa-save me-1"></i> Simpan</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</form>
+    </form>
+</div>
 <!-- Form End -->
 
 <script>
@@ -84,6 +84,4 @@
 
 <!-- Back to Top -->
 <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-<div class="content">
-</div>
 @endsection

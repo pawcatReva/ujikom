@@ -20,6 +20,7 @@ class CreatePesananTable extends Migration
             $table->string('nm_barang');
             $table->integer('jumlah');
             $table->text('alamat');
+            $table->foreign('nama')->references('nama')->on('keranjang')->onDelete('cascade');
             $table->timestamps();
         });
     }

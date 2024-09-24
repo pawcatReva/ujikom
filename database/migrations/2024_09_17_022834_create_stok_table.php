@@ -19,6 +19,7 @@ class CreateStokTable extends Migration
             $table->integer('stok');
             $table->integer('pemasukan_awal');
             $table->integer('pengeluaran');
+            $table->string('dokumen_barang');
             $table->timestamps();
         });
     }

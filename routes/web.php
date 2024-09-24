@@ -3,14 +3,12 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\KeranjangController;
 use App\Http\Controllers\ShopingController;
-// use App\Http\Controllers\RamuanController;
 use App\Http\Controllers\StokController;
 use App\Http\Controllers\UserAdminController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LoginAdminController;
 use App\Http\Controllers\Account\LoginUserController;
 use App\Http\Controllers\Account\RegisterUserController;
-use App\Http\Controllers\Account\JadwalKunjunganController;
 use App\Http\Controllers\PesananController;
 
 /*
@@ -68,12 +66,3 @@ Route::get('/account/logout', [LoginUserController::class, 'logout_user'])->name
 Route::get('/register_user', [RegisterUserController::class, 'index'])->name('account.register');
 Route::post('/register-user', [RegisterUserController::class, 'register_create'])->name('register-create');
 
-Route::resource('jadwal_kunjungan', JadwalKunjunganController::class);
-// Route::get('/test',[UserAdminController::class, 'getData'])->name('admin.test');
-// Route::get('user-admin', [UserAdminController::class, 'index'])->name('admin.user_admin.index'); // Resource controller
-
-// Route::get('dashboard', [AdminDashboardController::class, 'index'])->name('dashboard');
-// Route::get('/register', [RegisterAdminController::class, 'index'])->name('admin.register');
-// Route::post('/register/save', [RegisterAdminController::class, 'save'])->name('admin.register.save');
-// Route::post('/register/emailCheck', [RegisterAdminController::class, 'emailCheck'])->name('admin.register.emailCheck');
-// Route::post('/register/usernameCheck', [RegisterAdminController::class, 'usernameCheck'])->name('admin.register.usernameCheck');

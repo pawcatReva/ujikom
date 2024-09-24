@@ -12,9 +12,9 @@
             <div class="container py-5">
                 <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="sub-style">
-                        <h5 class="sub-title text-success px-3">Recommendation</h5>
+                        <h5 class="sub-title text-success px-3">Shopping</h5>
                     </div>
-                    <h1 class="display-5 text-success mb-4">Rekomendasi from Herby</h1>
+                    <h1 class="display-5 text-success mb-4">happy shopping</h1>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">

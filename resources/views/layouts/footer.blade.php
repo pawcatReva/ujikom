@@ -4,17 +4,16 @@
             <!-- Kolom 1 - Contact Info -->
             <div class="col-12 col-md-6">
                 <div class="footer-item d-flex flex-column">
-                    <h4 class="text-secondary mb-4">Contact Info</h4>
+                    <h4 class="text-primary mb-4">Programmer Contact Info</h4>
                     <a href="https://www.google.com/maps/place/Pangrumasan,+Peundeuy,+Garut+Regency,+West+Java/@-7.5588796,107.8508951,12735m/data=!3m2!1e3!4b1!4m6!3m5!1s0x2e66056d39f4f9d5:0x53e5a08c982203ff!8m2!3d-7.5630269!4d107.8998566!16s%2Fg%2F121_5zfv?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D"><i class="fa fa-map-marker-alt me-2"></i>Desa Pangrumasan Jawa Barat</a>
-                    <a href="#"><i class="fas fa-envelope me-2"></i> info@example.com</a>
-                    <a href="#"><i class="fas fa-phone me-2"></i> +012 345 67890</a>
-                    <a href="#" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+                    <a href="mailto:pawcat41@gmail.com"><i class="fas fa-envelope me-2"></i>pawcat41@gmail.com</a>
+                    <a href="https://wa.me/6285724034426?text=Halo,%20saya%20ingin%20bertanya..." class="text-muted me-0 text-white-custom"><i class="fas fa-phone-alt text-light me-2"></i>+085724034426</a>
                     <div class="d-flex align-items-center">
-                        <i class="fas fa-share fa-2x text-secondary me-2"></i>
-                        <a class="btn mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn mx-1" href="#"><i class="fab fa-instagram"></i></a>
-                        <a class="btn mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <i class="fas fa-share fa-2x text-primary me-2"></i>
+                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href="https://www.google.com/maps/place/Pangrumasan,+Peundeuy,+Garut+Regency,+West+Java/@-7.5588796,107.8508951,12735m/data=!3m2!1e3!4b1!4m6!3m5!1s0x2e66056d39f4f9d5:0x53e5a08c982203ff!8m2!3d-7.5630269!4d107.8998566!16s%2Fg%2F121_5zfv?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank"><i class="fa-solid fa-location-dot pw-normal text-white"></i></a>
+            <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href="https://www.facebook.com/pangrumasan.co" target="_blank"><i class="fab fa-facebook-f fw-normal text-white"></i></a>
+            <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href="https://www.instagram.com/desa_pangrumasan/" target="_blank"><i class="fab fa-instagram fw-normal text-white"></i></a>
+            <a class="btn btn-sm btn-outline-light btn-square rounded-circle" href="https://www.youtube.com/watch?v=LZk1u715VVI" target="_blank"><i class="fab fa-youtube fw-normal text-white"></i></a>
                     </div>
                 </div>
             </div>
@@ -22,12 +21,12 @@
             <!-- Kolom 2 - Newsletter -->
             <div class="col-12 col-md-6">
                 <div class="footer-item">
-                    <h4 class="text-secondary mb-4">Newsletter</h4>
-                    <p class="text-white mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <div class="position-relative mx-auto rounded-pill">
+                    <h4 class="text-primaryy mb-4">Newsletter</h4>
+                    <p class="text-white mb-3">Terima kasih telah mengunjungi situs kami! Bergabunglah dengan newsletter kami untuk mendapatkan berita terbaru, penawaran eksklusif, dan informasi menarik lainnya. Jangan lewatkan kesempatan untuk selalu terhubung dengan kami. Kami berkomitmen untuk memberikan konten berkualitas dan pengalaman terbaik bagi Anda.</p>
+                    <!-- <div class="position-relative mx-auto rounded-pill">
                         <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
                         <button type="button" class="btn btn-success rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

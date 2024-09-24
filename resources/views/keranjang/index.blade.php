@@ -48,22 +48,22 @@
                                         <td>{{ $keranjang->jumlah }}</td>
                                         <td>{{ $keranjang->alamat }}</td>
                                         <td>
-                                            <!-- Tombol Edit dan Hapus -->
-                                            <a class="btn btn-sm btn-dark me-2" href="{{ route('keranjang.edit', $keranjang->id) }}">
-                                                <i class="fas fa-edit me-1"></i>Edit
-                                            </a>
-                                            <button class="btn btn-sm btn-danger me-2" data-bs-toggle="modal" data-bs-target="#deleteModal{{ $keranjang->id }}">
-                                                <i class="fas fa-trash-alt me-1"></i>Hapus
-                                            </button>
+                                            @if(session('pesanan_terkirim_' . $keranjang->id))
+                                                <span class="text-success">Pesanan sudah dikirim!</span>
+                                                <!-- Tombol Edit dan Hapus tidak ditampilkan -->
+                                            @else
+                                                <!-- Tombol Edit dan Hapus -->
+                                                <a class="btn btn-sm btn-dark me-2" href="{{ route('keranjang.edit', $keranjang->id) }}">
+                                                    <i class="fas fa-edit me-1"></i>Edit
+                                                </a>
+                                                <button class="btn btn-sm btn-danger me-2" data-bs-toggle="modal" data-bs-target="#deleteModal{{ $keranjang->id }}">
+                                                    <i class="fas fa-trash-alt me-1"></i>Hapus
+                                                </button>
 
-                                            @if (!session('success_' . $keranjang->id))
                                                 <form action="{{ route('pesanan.store', $keranjang->id) }}" method="POST" style="display:inline;">
                                                     @csrf
-                                                    <button type="submit" class="btn btn-warning text-light">  
-                                                    <i class="fas fa-rocket me-1"></i>Kirim Pesanan</button>
+                                                    <button type="submit" class="btn btn-sm btn-warning text-light"><i class="fas fa-rocket me-1"></i>Pesan</button>
                                                 </form>
-                                            @else
-                                                <span class="text-success">Pesanan sudah dikirim</span>
                                             @endif
 
                                             <!-- Modal Konfirmasi Hapus -->
@@ -91,7 +91,6 @@
                                                 </div>
                                             </div>
                                             <!-- End Modal -->
-
                                         </td>
                                     </tr>
                                 @endforeach

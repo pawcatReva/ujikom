@@ -53,8 +53,8 @@ class PesananController extends Controller
     // Hapus data dari keranjang (opsional)
     // $keranjang->delete();
 
-    // return response()->json(['success', 'Pesanan berhasil dikirim']);;
-    // return view('admin.pesanan.success', ['message' => 'Pesanan berhasil dikirim']);
+    session(['pesanan_terkirim_' . $keranjang->id => true]);
+
     return redirect()->back()->with('success_' . $keranjang->id, 'Pesanan berhasil dikirim!');
     }
 
