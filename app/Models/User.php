@@ -27,7 +27,10 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
-
+    public function keranjang()
+    {
+        return $this->hasMany(Keranjang::class);
+    }
     /**
      * Atribut yang harus di-cast menjadi tipe data lain.
      *

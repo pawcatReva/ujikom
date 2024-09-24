@@ -3,15 +3,15 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\KeranjangController;
 use App\Http\Controllers\ShopingController;
-use App\Http\Controllers\RamuanController;
+// use App\Http\Controllers\RamuanController;
 use App\Http\Controllers\StokController;
 use App\Http\Controllers\UserAdminController;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\RegisterAdminController;
 use App\Http\Controllers\LoginAdminController;
 use App\Http\Controllers\Account\LoginUserController;
 use App\Http\Controllers\Account\RegisterUserController;
 use App\Http\Controllers\Account\JadwalKunjunganController;
+use App\Http\Controllers\PesananController;
 
 /*
 |------------------------------------------------------------------
@@ -39,9 +39,12 @@ Route::get('account', function () {
     return view('account/dashboard');
 })->name('account.dashboard');
 
-Route::resource('keranjang', KeranjangController::class);
+Route::resource('keranjang', KeranjangController::class)->middleware('auth:user');
 Route::resource('shoping', ShopingController::class);
-Route::resource('ramuan', RamuanController::class);
+// Route::resource('ramuan', RamuanController::class);
+
+Route::resource('pesanan', PesananController::class);
+Route::post('/pesanan/{id}', [PesananController::class, 'store'])->name('pesanan.store');
 
 Route::resource('stok', StokController::class);
 Route::resource('user_admin',UserAdminController::class);

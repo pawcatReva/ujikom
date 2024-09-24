@@ -42,7 +42,9 @@
         <!-- Spinner End -->
 
         <!-- Sidebar Start -->
+        <div class="main-container">
         @include('admin/layouts/sidebar')
+</div>
         <!-- Sidebar End -->
 
         <!-- Content Start -->
@@ -57,7 +59,9 @@
             </div>
 
             <!-- Footer Start -->
+            <div class="container-fluid pt-4 px-4 d-flex flex-column">
                 @include('admin/layouts/footer')
+            </div>
             <!-- Footer End -->
             </div>
         <!-- Content End -->

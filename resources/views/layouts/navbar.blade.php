@@ -12,13 +12,12 @@
                     <div class="navbar-nav ms-auto py-0">
                         <a href="{{route('dashboard')}}" class="nav-item nav-link">Home</a>
                         <a href="{{route('dashboard')}}#about" class="nav-item nav-link">About</a>
-                        <a href="{{route('dashboard')}}#ramuan" class="nav-item nav-link">Resep Herbal</a>
                         <a href="{{route('shoping.index')}}" class="nav-item nav-link">Shopping</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link" data-bs-toggle="dropdown"><span class="dropdown-toggle">Pages</span></a>
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown"><i class="fas fa-user"></i></a>
                             <div class="dropdown-menu m-0">
                                 <a href="{{route('account.dashboard')}}" class="dropdown-item"><i class="fas fa-user-alt me-2"></i>Account</a>
-                                <a href="testimonial.html" class="dropdown-item"><i class="fas fa-power-off me-2"></i>Logout</a>
+                                <a href="{{route('logout_user')}}" class="dropdown-item"><i class="fas fa-power-off me-2"></i>Logout</a>
                             </div>
                         </div>
                         <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->

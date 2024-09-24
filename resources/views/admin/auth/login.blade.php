@@ -81,7 +81,6 @@
                       <label for="floatingPassword">Password</label>
                        </div>
                      <button type="submit" class="btn btn-primary py-3 w-100 mb-4">Sign In</button>
-                     <p class="text-center mb-0">Don't have an Account? <a href="{{route('register')}}">Sign Up</a></p>
                     </form>
 
                     </div>

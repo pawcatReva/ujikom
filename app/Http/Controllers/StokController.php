@@ -14,7 +14,7 @@ class StokController extends Controller
      */
     public function index()
 {
-    $stok = Stok::all(); // Ambil semua data stok dari database
+    $stok = Stok::all(); 
     return view('admin.stok.index', compact('stok')); // Kirim data stok ke view
 }
 
@@ -35,23 +35,35 @@ class StokController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        $validatedData = $request->validate([
-            'nm_barang' => 'required|string|max:255',
-            'stok' => 'required|numeric|min:1',
-            'pemasukan_awal' => 'required|numeric|min:1',
-            'pengeluaran' => 'required|numeric|min:1',
-        ], [
-           'nm_barang' => 'Wajib diisi',
-            'stok' => 'Wajib diisi',
-            'pemasukan_awal' => 'Wajib diisi',
-            'pengeluaran' => 'wajib diisi',
-        ]);
+{
+    $validatedData = $request->validate([
+        'nm_barang' => 'required|string|max:255|unique:stok',
+        'stok' => 'required|numeric|min:1',
+        'pemasukan_awal' => 'required|numeric|min:1',
+        'pengeluaran' => 'required|numeric|min:1',
+        'dokumen_barang' => 'nullable|file|mimes:pdf,doc,docx',
+    ], [
+        'nm_barang' => 'Wajib diisi',
+        'nm_barang.unique' => 'Nama barang sudah ada',
+        'stok' => 'Wajib diisi',
+        'pemasukan_awal' => 'Wajib diisi',
+        'pengeluaran' => 'Wajib diisi',
+    ]);
 
-        Stok::create($validatedData);
-        
-        return redirect()->route('stok.index')->with('success', 'Info stok berhasil dimasukkan');
+    $stok = Stok::create($validatedData); // Buat stok
+
+    // Menyimpan dokumen jika ada
+    if ($request->hasFile('dokumen_barang')) {
+        $file = $request->file('dokumen_barang');
+        $filename = time() . '.' . $file->getClientOriginalExtension();
+        $file->move(public_path('dokumen'), $filename);
+
+        $stok->dokumen_barang = $filename; 
+        $stok->save(); // Simpan perubahan
     }
+    
+    return redirect()->route('stok.index')->with('success', 'Info stok berhasil dimasukkan');
+}
 
     /**
      * Display the specified resource.
@@ -84,22 +96,34 @@ class StokController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Stok $stok)
-    {
-        $validatedData = $request->validate([
-            'nm_barang' => 'required|string|max:255',
-            'stok' => 'required|numeric|min:1',
-            'pemasukan_awal' => 'required|numeric|min:1',
-            'pengeluaran' => 'required|numeric|min:1',
-        ], [
-           'nm_barang' => 'Wajib diisi',
-            'stok' => 'Wajib diisi',
-            'pemasukan_awal' => 'Wajib diisi',
-            'pengeluaran' => 'wajib diisi',
-        ]);
+{
+    $validatedData = $request->validate([
+        'nm_barang' => 'required|string|max:255',
+        'stok' => 'required|numeric|min:1',
+        'pemasukan_awal' => 'required|numeric|min:1',
+        'pengeluaran' => 'required|numeric|min:1',
+        'dokumen_barang' => 'nullable|file|mimes:pdf,doc,docx',
+    ], [
+        'nm_barang' => 'Wajib diisi',
+        'stok' => 'Wajib diisi',
+        'pemasukan_awal' => 'Wajib diisi',
+        'pengeluaran' => 'Wajib diisi',
+    ]);
 
-        $stok->update($validatedData);
-        return redirect()->route('stok.index')->with('success', 'stok berhasil diperbarui');
+    $stok->update($validatedData);
+    
+    // Menyimpan dokumen jika ada
+    if ($request->hasFile('dokumen_barang')) {
+        $file = $request->file('dokumen_barang');
+        $filename = time() . '.' . $file->getClientOriginalExtension();
+        $file->move(public_path('dokumen'), $filename);
+        
+        $stok->dokumen_barang = $filename; // Update nama file dokumen
+        $stok->save(); // Simpan perubahan
     }
+
+    return redirect()->route('stok.index')->with('success', 'Stok berhasil diperbarui');
+}
 
     /**
      * Remove the specified resource from storage.

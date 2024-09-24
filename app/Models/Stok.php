@@ -9,5 +9,5 @@ class Stok extends Model
 {
     use HasFactory;
     protected $table = 'stok';
-    protected $fillable = ['nm_barang', 'stok', 'pemasukan_awal', 'pengeluaran'];
+    protected $fillable = ['nm_barang', 'stok', 'pemasukan_awal', 'pengeluaran',  'dokumen_barang'];
 }

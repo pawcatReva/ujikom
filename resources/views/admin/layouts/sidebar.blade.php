@@ -1,4 +1,3 @@
-<div class="main-container">
 <div class="sidebar pe-4 pb-3 sticky-top">
             <nav class="navbar bg-secondary navbar-dark">
                 <a href="index.html" class="navbar-brand mx-4 mb-3">
@@ -26,6 +25,7 @@
                         </div>
                     </div>
                     <a href="{{route('stok.index')}}" class="nav-item nav-link"><i class="fa fa-box me-2"></i>Stok</a>
+                    <a href="{{route('pesanan.index')}}" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Pesanan</a>
                 </div>
             </nav>
         </div>

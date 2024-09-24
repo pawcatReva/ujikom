@@ -12,7 +12,7 @@
     </div>
 @endif
 
-<form action ="{{ url('stok/'.$stok->id) }}" method="post">
+<form action="{{ url('stok/'.$stok->id) }}" method="post" enctype="multipart/form-data">
     @csrf
     @method('PUT')
     <div class="container-fluid pt-5 px-5">
@@ -46,7 +46,13 @@
                         <input type="number" class="form-control" name="pengeluaran" id="pengeluaran" value="{{ $stok->pengeluaran }}" placeholder="Pengeluaran barang">
                         <label for="pengeluaran">Pengeluaran Barang</label>
                     </div>
+                    <div class="form-floating mb-3">
+                        <label for="dokumen_barang" class="form-label">Dokumen Barang</label>
+                        <input type="file" class="form-control" name="dokumen_barang" id="dokumen_barang">
+                    </div>
                 </div>
+            </div>
+            <div class="col-sm-12 col-xl-6">
                 <div class="card-footer">
                     <div class="d-flex justify-content-between">
                         <a class="btn btn-danger" href="{{ route('stok.index') }}"><i class="fas fa-arrow-left me-1"></i> Kembali</a>

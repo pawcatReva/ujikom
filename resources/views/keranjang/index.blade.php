@@ -1,14 +1,5 @@
 @extends('layouts.app')
 @section('content')
-<!-- 
-<style>
-    .alert-custom-margin {
-        margin-top: 20px; /* Jarak antara alert dan navbar */
-    }
-    .table-custom-margin {
-        margin-bottom: 10px; /* Jarak antara tabel dan alert */
-    }
-</style> -->
 
 @if(session('success'))
     <div class="alert alert-success alert-dismissible fade show alert-custom-margin" role="alert">
@@ -16,7 +7,6 @@
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 @endif
-
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light px-4 px-lg-5 py-3 py-lg-0 mb-4">
     <!-- Isi navbar -->
@@ -58,18 +48,23 @@
                                         <td>{{ $keranjang->jumlah }}</td>
                                         <td>{{ $keranjang->alamat }}</td>
                                         <td>
+                                            <!-- Tombol Edit dan Hapus -->
                                             <a class="btn btn-sm btn-dark me-2" href="{{ route('keranjang.edit', $keranjang->id) }}">
                                                 <i class="fas fa-edit me-1"></i>Edit
                                             </a>
-
                                             <button class="btn btn-sm btn-danger me-2" data-bs-toggle="modal" data-bs-target="#deleteModal{{ $keranjang->id }}">
                                                 <i class="fas fa-trash-alt me-1"></i>Hapus
                                             </button>
 
-                                            <!-- Tombol Pesan -->
-                                            <a class="btn btn-sm btn-warning text-white" href="#">
-                                                <i class="fas fa-rocket me-1"></i>Pesan
-                                            </a>
+                                            @if (!session('success_' . $keranjang->id))
+                                                <form action="{{ route('pesanan.store', $keranjang->id) }}" method="POST" style="display:inline;">
+                                                    @csrf
+                                                    <button type="submit" class="btn btn-warning text-light">  
+                                                    <i class="fas fa-rocket me-1"></i>Kirim Pesanan</button>
+                                                </form>
+                                            @else
+                                                <span class="text-success">Pesanan sudah dikirim</span>
+                                            @endif
 
                                             <!-- Modal Konfirmasi Hapus -->
                                             <div class="modal fade" id="deleteModal{{ $keranjang->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -96,9 +91,10 @@
                                                 </div>
                                             </div>
                                             <!-- End Modal -->
+
                                         </td>
                                     </tr>
-                                    @endforeach
+                                @endforeach
                                 </tbody>
                             </table>
                         </div>
@@ -110,6 +106,5 @@
         </div>
     </div>
 </div>
-
 
 @endsection

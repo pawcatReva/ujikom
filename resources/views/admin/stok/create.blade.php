@@ -14,7 +14,7 @@
 
 <!-- Form Start -->
 <div class="content-fluid justify-content-center align-items-center min-vh-100">
-    <form id="formPesanan" action="{{ route('stok.store') }}" method="post" class="w-100">
+    <form id="formPesanan" action="{{ route('stok.store') }}" method="post" class="w-100" enctype="multipart/form-data">
         @csrf
         <div class="container-fluid pt-5 px-5">
             <div class="row g-4">
@@ -47,6 +47,9 @@
                         <div class="form-floating mb-3">
                             <input type="number" class="form-control" name="pengeluaran" id="pengeluaran" placeholder="Pengeluaran barang">
                             <label for="pengeluaran">Pengeluaran Barang</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="file" class="form-control bg-secondary" name="dokumen_barang" id="dokumen_barang" >
                         </div>
                     </div>
                     <div class="card-footer">

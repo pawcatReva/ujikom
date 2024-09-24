@@ -5,7 +5,7 @@
             <div class="col-12 col-md-6">
                 <div class="footer-item d-flex flex-column">
                     <h4 class="text-secondary mb-4">Contact Info</h4>
-                    <a href="#"><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a>
+                    <a href="https://www.google.com/maps/place/Pangrumasan,+Peundeuy,+Garut+Regency,+West+Java/@-7.5588796,107.8508951,12735m/data=!3m2!1e3!4b1!4m6!3m5!1s0x2e66056d39f4f9d5:0x53e5a08c982203ff!8m2!3d-7.5630269!4d107.8998566!16s%2Fg%2F121_5zfv?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D"><i class="fa fa-map-marker-alt me-2"></i>Desa Pangrumasan Jawa Barat</a>
                     <a href="#"><i class="fas fa-envelope me-2"></i> info@example.com</a>
                     <a href="#"><i class="fas fa-phone me-2"></i> +012 345 67890</a>
                     <a href="#" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>

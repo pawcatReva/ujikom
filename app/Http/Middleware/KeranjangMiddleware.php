@@ -20,7 +20,7 @@ class KeranjangMiddleware
         if (!auth()->check()) {
             return redirect()->route('keranjang.index');
         }
-        $userId = auth()->id(); // Ambil ID pengguna yang sedang login
+        $userId = auth()->user()->id(); // Ambil ID pengguna yang sedang login
         $keranjangCount = Keranjang::where('user_id', $userId)->count(); // Hitung jumlah item di keranjang
 
         if ($keranjangCount == 0) {

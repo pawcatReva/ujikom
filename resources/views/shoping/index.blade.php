@@ -159,9 +159,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-center wow fadeInUp" data-wow-delay="0.5s">
-                <a class="btn-custom" href="{{route('shoping.index')}}" rel="noopener noreferrer">Lihat Selengkapnya</a>
-               </div>
+
             </div>
         </div>
 </body>
