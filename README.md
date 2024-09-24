@@ -46,4 +46,4 @@ Website yang saya buat ini merupakan sebuah website tempat membeli tumbuhan atau
          - Email : yamada@gmail.com
          - Password : 1234567890
 ## ERD
-(https://github.com/pawcatReva/ujikom/blob/main/erdujikom.png)
+![Alt text](https://github.com/pawcatReva/ujikom/blob/main/erdujikom.png)
