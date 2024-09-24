@@ -45,3 +45,4 @@ Website yang saya buat ini merupakan sebuah website tempat membeli tumbuhan atau
      - login
          - Email : yamada@gmail.com
          - Password : 1234567890
+## ERD
