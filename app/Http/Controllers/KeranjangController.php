@@ -11,7 +11,7 @@ class KeranjangController extends Controller
     public function index()
     {
         $keranjang=Keranjang::all();
-        // $keranjang = auth()->user()->keranjang;
+        // $keranjang = auth()->user()->Keranjang;
         return view('keranjang.index', compact('keranjang'));
     }
 
@@ -41,7 +41,7 @@ class KeranjangController extends Controller
         //     return redirect()->back()->withErrors(['user_id' => 'User tidak ditemukan']);
         // }
 
-        // $validatedData['user_id'] = $userId; 
+        // $validatedData['id'] = $id; 
         // $validatedData['nama'] = auth()->user()->name;
         Keranjang::create($validatedData);
         

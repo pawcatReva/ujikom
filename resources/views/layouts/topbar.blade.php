@@ -1,8 +1,8 @@
 <div class="row gx-0 align-items-center">
     <div class="col-lg-5 text-center text-lg-start mb-lg-0">
         <div class="d-flex">
-            <a href="https://wa.me/6285724034426?text=Halo,%20saya%20ingin%20bertanya..." class="text-muted me-4 text-white-custom"><i class="fas fa-envelope text-light me-2"></i>pawcat41@gmail.com</a>
-            <a href="sms:+6285724034426" class="text-muted me-0 text-white-custom"><i class="fas fa-phone-alt text-light me-2"></i>+085724034426</a>
+            <a href="mailto:pawcat41@gmail.com" class="text-muted me-4 text-white-custom"><i class="fas fa-envelope text-light me-2"></i>pawcat41@gmail.com</a>
+            <a href="https://wa.me/6285724034426?text=Halo,%20saya%20ingin%20bertanya..." class="text-muted me-0 text-white-custom"><i class="fas fa-phone-alt text-light me-2"></i>+085724034426</a>
         </div>
     </div>
     <div class="col-lg-5 text-lg-end mb-lg-0">
