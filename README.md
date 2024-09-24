@@ -47,3 +47,11 @@ Website yang saya buat ini merupakan sebuah website tempat membeli tumbuhan atau
          - Password : 1234567890
 ## ERD
 ![Alt text](https://github.com/pawcatReva/ujikom/blob/main/erdujikom.png)
+
+## Teknologi yang Digunakan
+  - Laravel 8
+  - Boostrap 5
+
+## Instalasi
+  - Clone repository
+    'git clone'
