@@ -29,6 +29,7 @@ Website yang saya buat ini merupakan sebuah website tempat membeli tumbuhan atau
     
   - Administrator
      - Login (sebagai admin)
+     - Logout (sebagai admin)
      - Pengguna yang dapat dikelola
      - Membuat laporan stok barang
      - Pesanan yang dapat dikelola
@@ -47,10 +48,17 @@ Website yang saya buat ini merupakan sebuah website tempat membeli tumbuhan atau
          - Password : 1234567890
 ## ERD
 ![Alt text](https://github.com/pawcatReva/ujikom/blob/main/erdujikom.png)
+Abaikan tabel personal_access_tokens, users, failed_jobs, 
+migrations, password_resets karena itu bawaan.
 
 ## Teknologi yang Digunakan
   - Laravel 8
   - Boostrap 5
+
+## Syarat Melakukan Instalasi
+  - php 8.1.10 & web server (apache)
+  - Database (Navicat)
+  - Web Browser (Chrome atau Microsoft Edge)
 
 ## Instalasi
   - Clone repository
@@ -60,3 +68,24 @@ git composer https://github.com/pawcatReva/ujikom.git
 composer install
 cp .env.example .env
 ```
+
+## Konfigurasi Database Pada File .env
+```
+APP_DEBUG=true
+DB_DATABASE=ujikom
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+## Melakukan Migrasi dan Menyambungkan Storage
+```
+php artisan key:generate
+php artisan storage:link
+php artisan migrate --seed
+```
+
+## Mulai Situs Web
+```
+php artisan serve
+```
+### UKK Herby dibuat oleh [Revalina Aryanti](https://www.instagram.com/fh_rev/)
