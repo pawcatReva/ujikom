@@ -62,3 +62,22 @@ cp .env.example .env
 ```
 
 ## Konfigurasi Database Pada File .env
+```
+APP_DEBUG=true
+DB_DATABASE=ujikom
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+## Melakukan Migrasi dan Menyambungkan Storage
+```
+php artisan key:generate
+php artisan storage:link
+php artisan migrate --seed
+```
+
+## Mulai Situs Web
+```
+php artisan serve
+```
+### UKK Herby dibuat oleh [Revalina Aryanti](https://www.instagram.com/fh_rev/)
