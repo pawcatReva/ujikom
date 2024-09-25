@@ -60,3 +60,5 @@ git composer https://github.com/pawcatReva/ujikom.git
 composer install
 cp .env.example .env
 ```
+
+## Konfigurasi Database Pada File .env
