@@ -29,6 +29,7 @@ Website yang saya buat ini merupakan sebuah website tempat membeli tumbuhan atau
     
   - Administrator
      - Login (sebagai admin)
+     - Logout (sebagai admin)
      - Pengguna yang dapat dikelola
      - Membuat laporan stok barang
      - Pesanan yang dapat dikelola
