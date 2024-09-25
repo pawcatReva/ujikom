@@ -51,6 +51,9 @@ Website yang saya buat ini merupakan sebuah website tempat membeli tumbuhan atau
 Abaikan tabel personal_access_tokens, users, failed_jobs, 
 migrations, password_resets karena itu bawaan.
 
+## Use Case Diagram
+![Alt text](https://github.com/pawcatReva/ujikom/blob/main/uml.png)
+
 ## Teknologi yang Digunakan
   - Laravel 8
   - Boostrap 5
