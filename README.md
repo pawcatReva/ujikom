@@ -48,6 +48,8 @@ Website yang saya buat ini merupakan sebuah website tempat membeli tumbuhan atau
          - Password : 1234567890
 ## ERD
 ![Alt text](https://github.com/pawcatReva/ujikom/blob/main/erdujikom.png)
+Abaikan tabel personal_access_tokens, users, failed_jobs, 
+migrations, password_resets karena itu bawaan.
 
 ## Teknologi yang Digunakan
   - Laravel 8
