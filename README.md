@@ -55,6 +55,11 @@ migrations, password_resets karena itu bawaan.
   - Laravel 8
   - Boostrap 5
 
+## Syarat Melakukan Instalasi
+  - php 8.1.10 & web server (apache)
+  - Database (Navicat)
+  - Web Browser (Chrome atau Microsoft Edge)
+
 ## Instalasi
   - Clone repository
 
