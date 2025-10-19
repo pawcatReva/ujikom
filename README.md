@@ -67,7 +67,7 @@ migrations, password_resets karena itu bawaan.
   - Clone repository
 
 ```
-git composer https://github.com/pawcatReva/ujikom.git
+git clone https://github.com/pawcatReva/ujikom.git
 composer install
 cp .env.example .env
 ```
