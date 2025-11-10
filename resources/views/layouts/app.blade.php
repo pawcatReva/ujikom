@@ -32,11 +32,18 @@
         <!-- Template Stylesheet -->
         <link href="{{asset('css/style.css')}}" rel="stylesheet">
         <style>
+.counter::before {
+    background-color: #90cf8e !important;
+}
+
  .bg-hijmud {
     background-color: #608334 !important;
 }
-.bg-success {
+.bg-hijhij {
     background-color: #97B770 !important;
+}
+.bg-success {
+    background-color: #229834 !important;
 }
 .bg-hejo {
     background-color: #239b5d !important;
